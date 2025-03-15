@@ -24,7 +24,7 @@ public class MovieManagerTest {
         manager.addMovie("Джентельмены");
         manager.addMovie("Человек-Невидимка");
 
-        String[] expected = { "Человек-Невидимка", "Джентельмены", "Отель Белград", "Вперед","Бладшот"};
+        String[] expected = {"Человек-Невидимка", "Джентельмены", "Отель Белград", "Вперед", "Бладшот"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -59,6 +59,7 @@ public class MovieManagerTest {
         Assertions.assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void testLastFourMovies() {
         MovieManager manager = new MovieManager();
@@ -67,10 +68,11 @@ public class MovieManagerTest {
         manager.addMovie("Отель Белград");
         manager.addMovie("Джентельмены");
 
-        String[] expected = { "Джентельмены", "Отель Белград", "Вперед", "Бладшот"};
+        String[] expected = {"Джентельмены", "Отель Белград", "Вперед", "Бладшот"};
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void testLimit() {
         MovieManager manager = new MovieManager(5);

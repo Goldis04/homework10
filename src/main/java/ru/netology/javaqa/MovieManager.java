@@ -13,13 +13,13 @@ public class MovieManager {
     }
 
     public void addMovie(String movie) {
-        if (movies.length < limit){
-        String[] tmp = new String[movies.length + 1];
-        for (int i = 0; i < movies.length; i++) {
-            tmp[i] = movies[i];
-        }
-        tmp[tmp.length - 1] = movie;
-        movies = tmp;
+        if (movies.length < limit) {
+            String[] tmp = new String[movies.length + 1];
+            for (int i = 0; i < movies.length; i++) {
+                tmp[i] = movies[i];
+            }
+            tmp[tmp.length - 1] = movie;
+            movies = tmp;
         }
     }
 
